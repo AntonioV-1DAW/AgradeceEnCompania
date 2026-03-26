@@ -35,14 +35,14 @@
             <a class="botones" href="./cerrar_sesion.php">Cerrar sesión</a>
         </nav>
         <section class="principal">
-            <label for="alumnos" placeholder="Selecciona un alumno">Para: </label>
-            <select name="alumnos" id="alumnos">
+            <label for="nombre" placeholder="Selecciona un alumno">Para: </label>
+            <select name="nombre" id="nombre">
                 <?php
                     mostrarAlumnos($conexion);
                 ?>
             </select>
-            <label for="informacion">Agradecimiento:</label><br>
-            <input type="text" id="informacion" name="informacion" placeholder="Introduce tu mensaje" class="mensaje" required><br><br>
+            <label for="infoJesuita">Agradecimiento:</label><br>
+            <input type="text" id="infoJesuita" name="infoJesuita" placeholder="Introduce tu mensaje" class="mensaje" required><br><br>
         </section>
         <aside>
             <img src="./imagenes/jesuita.png" class="jesuita"/>

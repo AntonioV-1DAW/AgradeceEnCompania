@@ -5,11 +5,11 @@
     $conexion=new mysqli(SERVIDOR, USUARIO, PASSWORD, BBDD);
 
     if($_POST){
-        $nombre=$_POST["nombre"];
-        $contrasena=$_POST["contrasena"];
+        $usuario=$_POST["usuario"];
+        $password=$_POST["contrasena"];
 
         //Consulta del query
-        $sql = "SELECT idAlumno FROM alumnos WHERE nombre = '$nombre' AND contrasena = '$contrasena'";
+        $sql = "SELECT idAlumno FROM alumnos WHERE usuario = '$usuario' AND contrasena = '$password'";
         echo $sql
         echo'<br/>';
         echo'<br/>';
@@ -58,7 +58,7 @@
                         <input type="text" id="usuario" name="usuario" placeholder="Introduce tu usuario" class="campo" required><br><br>
 
                         <label for="nombre">Contraseña:</label><br>
-                        <input type="password" id="contrasena" name="contrasena" placeholder="Introduce tu contraseña" class="campo" required><br>
+                        <input type="password" id="password" name="password" placeholder="Introduce tu contraseña" class="campo" required><br>
                     </div>
                     <div>
                         <p>
